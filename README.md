@@ -1,5 +1,4 @@
-# clsp
-**Critical Language Song Project**
+# clsp -- critical language song project**
 
 ## Introduction
 In the Critical Languages Song Project, songs are both the object of study and a stepping off point for broader discussion and writing. Materials are presented in a specially designed computer interface. Rich annotation supports baseline advanced learners, while a broad range of contextual content in various media spurs directed exploration among more fluent reader/listeners who have spent time abroad. Songs run the gamut from 1930s popular music to bards, rock and other contemporary forms. The project employs an interdisciplinary approach that merges culture, content and language in a learner-centered environment of the type specifically called for by the ACTFL Standards for Foreign Language Learning.
@@ -8,6 +7,7 @@ This repository holds a downloadable version of the project source code. Procedu
 
 ## Installation
 If you experience any problems at all with installation contact Dr. Stuart Goldberg at sgoldberg(at)gatech.edu. Be sure to also follow us on Twitter and like us on Facebook blah blah.
+
 **Procedure 1: Installation by a Techie**
 * Download the zip file: install_package.zip
 
