@@ -8,13 +8,33 @@ The following two packages are provided:
 1. site_package.zip - This contains the web application project files (i.e. php files, etc.)
 2. db_package.sql - This is the database package
 
-**Procedure 1: Installation by a Techie**
+**Procedure 1: Manual Installation by a Techie**
 - Download the web application (site_package.zip) and the database (db_package.sql) files on to your server.
-- Unzip the web application package in your desired folder under the document root of your server. For example, we unzipped in a folder called "DownloadableTest."
-- Make sure that the folder has read and execute permissions for Group and Other users.
-- 
+- Unzip the web application package in your desired folder under the document root of your server. For example, we unzipped in a folder we created called "DownloadableTest" on an Apache Server. The document root is /var/www/html and thus folder path is /var/www/html/DownloadableTest.
+- Make sure that the folder has appropriate permissions (should have read and execute permissions for Group and Other users).
+- Create an SQL database (db) and import the tables in the file "db_package.sql" into it. For example, we created a database named "clsp" and imported/dumped the db_package.sql into it. You can use a tool like phpmyadmin to easily manage all this.
+- Create a new user having access to this db and grant all privileges to the user. Make a note of the user name and password. 
+- By now all the tables needed should have been uploaded into the db created. If you added this new user from the command line, you will need to issue a FLUSH PRIVILEGES statement to tell the server to reload the tables with the updated privileges of the new user. Using a tool such as phpmyadmin takes care of this automatically when the new user is created.
+- Now you will need to tell the web application where to the database and how to connect to it. To do this, edit the config.php in the folder where site_package was unzipped. The database setup section in config.php should look like this:   
 
-* We installed on an Apache server running 
+/*Database Setup*/
+
+	// SERVER
+define ("MYSQL_CONNECT_HOST", "ENTER_HOST");
+	
+	//USER
+define ("MYSQL_CONNECT_USER", "ENTER_USER");
+	
+	//PASSWD
+define ("MYSQL_CONNECT_PASS", "ENTER_PASS");
+	
+	//DATABASE
+define ("MYSQL_DB_NAME", "ENTER_DATABASE");
+
+
+- set the host name, user name , password, and db name as desired. For example, if the db is on the same server, set the host name to be "localhost." Set the user name and password as required, and set the db name to match that which you created earlier--- in this case, "clsp." 
+- Now you are done. You should be able to launch the application from your web browser. Enter the url to the folder containing the web application and watch the index page open up. For example, suppose the folder containing the web files, "DownloadableTest" is in the document root of the server named: test.iac.gatech.edu, then using the url test.iac.gatech.edu/DownloadableTest should launch the index page of the application.
+
 
 If you experience any problems at all with installation contact Dr. Stuart Goldberg at sgoldberg(at)gatech.edu.
 
