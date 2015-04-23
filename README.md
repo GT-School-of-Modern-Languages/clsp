@@ -4,7 +4,7 @@ In the **Critical Languages Song Project (CLSP)**, songs are both the object of 
 This repository holds a downloadable version of the project source code. Procedure to download and install a local working version on your server is provided here.
 
 ## Installation
-Two kinds of installations are envisaged: 1. a manual installation by a person that has a good understanding installing web applications, and 2. installation using a shell script `install.sh` to be provided at a later date.  
+Two kinds of installations are envisaged: 1) a manual installation by a person that has a good understanding installing web applications, and 2) installation using a shell script `install.sh` to be provided at a later date.  
 
 The following two packages are provided:    
 1. site_package.zip - This contains the web application project files (i.e. php files, etc.)    
@@ -17,7 +17,7 @@ The following two packages are provided:
 - Create an SQL database (db) and import/dump the contents of `db_package.sql` into it. For example, we created a database named "clsp" and dumped the tables in db_package.sql into it. You can use a tool like phpmyadmin to easily manage all this.
 - Create a new user having access to this db and grant all privileges to the user. Make a note of the user name and password. 
 - By now all the tables needed should have been uploaded into the db created. If you added this new user from the command line, you will need to issue a FLUSH PRIVILEGES statement to tell the server to reload the tables with the updated privileges of the new user. Using a tool such as phpmyadmin takes care of this automatically when the new user is created.
-- Now you will need to tell the web application where to find the database and how to connect to it. To do this, edit the `config.php` in the folder where site_package was unzipped. The database setup section in config.php should look like this:   
+- Now you will need to tell the web application where to find the database and how to connect to it. To do this, edit the config file `config.php` in the folder where site_package was unzipped. The database setup section in the file should look like this:   
 ```
 /*Database Setup*/
 
@@ -34,7 +34,7 @@ define ("MYSQL_CONNECT_PASS", "ENTER_PASS");
 define ("MYSQL_DB_NAME", "ENTER_DATABASE");
 ```
 
-- set the host name, user name , password, and db name as required. For example, if the db is on the same server, set the host name to be "localhost." Set the user name, password, db name to match the sql server which you created earlier--- in this example, "clsp."
+- Set the host name, user name , password, and db name as required. For example, if the db is on the same server, set the host name to be "localhost." Set the user name, password, db name to match the sql server which you created earlier--- in this example, "clsp."
 - Now you are done. You should be able to launch the application from your web browser. Enter the url to the folder containing the web application and the index page should open up. For example, suppose the folder containing the web files, "DownloadableTest" is in the document root of the server named: `test.iac.gatech.edu`, then using the url `test.iac.gatech.edu/DownloadableTest` should launch the index page of the application. You should see a landing page like this
 
 ![Screenshot](/screen-shots/clsp-index-page.png)
