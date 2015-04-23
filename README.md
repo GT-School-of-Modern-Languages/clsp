@@ -33,15 +33,22 @@ define ("MYSQL_DB_NAME", "ENTER_DATABASE");
 ```
 
 - set the host name, user name , password, and db name as desired. For example, if the db is on the same server, set the host name to be "localhost." Set the user name and password as required, and set the db name to match that which you created earlier--- in this case, "clsp." 
-- Now you are done. You should be able to launch the application from your web browser. Enter the url to the folder containing the web application and watch the index page open up. For example, suppose the folder containing the web files, "DownloadableTest" is in the document root of the server named: test.iac.gatech.edu, then using the url test.iac.gatech.edu/DownloadableTest should launch the index page of the application. You should see a landing page like this
+- Now you are done. You should be able to launch the application from your web browser. Enter the url to the folder containing the web application and watch the index page open up. For example, suppose the folder containing the web files, "DownloadableTest" is in the document root of the server named: test.iac.gatech.edu, then using the url `test.iac.gatech.edu/DownloadableTest` should launch the index page of the application. You should see a landing page like this
 
 ![Screenshot](/screen-shots/clsp-index-page.png)
+
+You can access the admin page by going directly to the page: `test.iac.gatech.edu/DownloadableTest/_adm-page`. You should see an image like this
+
+![Screenshot](/screen-shots/clsp-admin-page.png)
+
 
 
 If you experience any problems at all with installation contact Dr. Stuart Goldberg at sgoldberg(at)gatech.edu.
 
-Be sure to also visit http://www.clsp.gatech.edu/Song_Project/ for a live version of the project and for additional content, news, and updates about the project.
+Be sure to also visit 'http://www.clsp.gatech.edu/Song_Project/' for a live version of the project and for additional content, news, and updates about the project.
 
 ## Contributors
+- Dr. Stuart Goldberg
+- and others
 
-## License
+## License/Copyright Notice
