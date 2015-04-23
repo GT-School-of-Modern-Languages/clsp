@@ -35,7 +35,7 @@ define ("MYSQL_DB_NAME", "ENTER_DATABASE");
 ```
 
 - Set the host name, user name , password, and db name as required. For example, if the db is on the same server, set the host name to be "localhost." Set the user name, password, db name to match the sql server which you created earlier--- in this example, "clsp."
-- Now you are done. You should be able to launch the application from your web browser. Enter the url to the folder containing the web application and the index page should open up. For example, suppose the folder containing the web files, "DownloadableTest" is in the document root of the server named: `test.iac.gatech.edu`, then using the url `test.iac.gatech.edu/DownloadableTest` should launch the index page of the application. You should see a landing page like this
+- Now you are done. You should be able to launch the application from your web browser. Enter the url to the folder containing the web application and the index page should open up. For example, suppose the folder containing the web files is in the document root of the server named: `test.iac.gatech.edu`, then using the url `test.iac.gatech.edu/DownloadableTest` should launch the index page of the application. You should see a landing page like this
 
 ![Screenshot](/screen-shots/clsp-index-page.png)
 
