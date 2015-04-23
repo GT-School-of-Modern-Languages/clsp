@@ -4,9 +4,9 @@ In the **Critical Languages Song Project (CLSP)**, songs are both the object of 
 This repository holds a downloadable version of the project source code. Procedure to download and install a local working version on your server. Two sets of instructions are provided: One for 
 
 ## Installation
-The following two packages are provided:
-1. site_package.zip - This contains the web application project files (i.e. php files, etc.)
-2. db_package.sql - This is the database package
+The following two packages are provided:    
+1. site_package.zip - This contains the web application project files (i.e. php files, etc.)    
+2. db_package.sql - This is the database package    
 
 **Procedure 1: Manual Installation by a Techie**
 - Download the web application (site_package.zip) and the database (db_package.sql) files on to your server.
